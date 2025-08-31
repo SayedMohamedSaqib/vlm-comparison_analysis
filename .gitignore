@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.*
+*.ipynb_checkpoints
+.cache/
+.huggingface/
+accelerate/
+# OS
+.DS_Store
+Thumbs.db
+# artifacts
+reports/
+runs/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.onnx_data
+# data
+data/**/*.jpg
+data/**/*.png
+data/**/*.jpeg
+data/**/*.webp
+data/**/*.gif
+data/**/*.mp4
+!data/sample_images/**
