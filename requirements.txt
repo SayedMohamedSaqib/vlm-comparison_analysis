@@ -1,4 +1,4 @@
-# core
+# Core deep learning and NLP
 torch>=2.3
 torchvision>=0.18
 transformers>=4.45
@@ -11,9 +11,28 @@ einops>=0.7
 psutil>=5.9
 numpy>=1.26
 
-# optional speed/quant
-bitsandbytes>=0.43; platform_system != "Windows"
+# Optional speed/quant (non-Windows)
+bitsandbytes>=0.43 ; platform_system != "Windows"
 qwen-vl-utils>=0.0.8
 
-# metrics
+# Metrics
 scikit-learn>=1.4
+
+# Audio / Speech-to-Text
+sounddevice==0.5.2                  # Compatible with Python 3.12 / Windows
+openai-whisper>=1.1.10              # Correct PyPI package for Whisper
+torchcrepe>=0.0.24                  # Optional, latest available version for Whisper
+vosk>=0.3.45                       # Vosk offline speech recognition toolkit (matched from usage)
+
+# Video / Webcam
+opencv-python>=4.9.0
+ultralytics>=8.0.20                # For ByteTrack and YOLO tracking from ultralytics tracker usage
+
+# Sentence Embedding / Semantic Matching
+sentence-transformers>=2.2.2       # For sentence-transformers library used for semantic similarity
+
+# Additional utilities
+Pillow>=10.3                      # For image processing (already listed)
+torchmetrics>=0.11.4              # (Optional) for metrics assisting scikit-learn or torch operations
+
+# Logging utilities (already indirectly used via logging module)
